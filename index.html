@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filosofía para niños y niñas</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav class="top-nav" aria-label="Navegación principal">
+      <a class="top-nav__brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="img/identidad/Logo-Osa-Mayor.png" alt="Logo de Osa Mayor">
+      </a>
+      <div class="top-nav__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#ayudantes">Ayudantes</a>
+        <a href="#respiraciones">Respiraciones</a>
+        <a href="#puertas">Puertas</a>
+        <a href="#planificaciones">Planificaciones</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Laboratorio Filosófico</p>
+        <h1>Filosofía para niños y niñas</h1>
+        <p class="hero__subtitle">Un espacio para organizar las clases del Laboratorio Filosófico por semanas, cursos y recorridos para pensar juntos.</p>
+        <p class="hero__intro">Este panel reúne las planificaciones, los ayudantes, las respiraciones, las puertas del laboratorio y los recursos necesarios para acompañar el pensamiento en el aula.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro-section" aria-labelledby="laboratorio-title">
+        <div class="section__heading">
+          <p class="eyebrow">Entrar, mirar, preguntar</p>
+          <h2 id="laboratorio-title">Presentación del Laboratorio Filosófico</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <h3>Un lugar para experimentar con ideas</h3>
+            <p>En este laboratorio no trabajamos con tubos de ensayo: investigamos con palabras, preguntas, miradas, escucha, cuerpo y gestos. Las puertas ordenan el recorrido y los ayudantes cuidan la conversación.</p>
+          </article>
+          <article>
+            <h3>Una brújula para la docente</h3>
+            <p>Las semanas están organizadas por curso porque Primero, Segundo y Tercero no siempre atraviesan el mismo tema ni el mismo estado de clase. Cada planificación se abre desde su botón correspondiente.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ayudantes" class="section helpers-section" aria-labelledby="ayudantes-title">
+        <div class="section__heading section__heading--center">
+          <p class="eyebrow">Guardianes de la palabra</p>
+          <h2 id="ayudantes-title">Ayudantes del Laboratorio</h2>
+        </div>
+        <div id="helpersGrid" class="helpers-grid"></div>
+      </section>
+
+      <section id="respiraciones" class="section" aria-labelledby="respiraciones-title">
+        <div class="section__heading section__heading--center">
+          <p class="eyebrow">Cuerpo atento</p>
+          <h2 id="respiraciones-title">Respiraciones</h2>
+        </div>
+        <div id="breathingGrid" class="breathing-grid"></div>
+      </section>
+
+      <section id="puertas" class="section doors-section" aria-labelledby="puertas-title">
+        <div class="section__heading section__heading--center">
+          <p class="eyebrow">Recorrido para pensar</p>
+          <h2 id="puertas-title">Puertas del Laboratorio</h2>
+        </div>
+        <div id="doorsGrid" class="door-grid"></div>
+      </section>
+
+      <section id="planificaciones" class="section plans-section" aria-labelledby="plans-title">
+        <div class="section__heading">
+          <p class="eyebrow">15 semanas</p>
+          <h2 id="plans-title">Planificaciones semanales</h2>
+        </div>
+
+        <div class="filters" aria-label="Herramientas de búsqueda y filtros">
+          <label class="search-field">
+            <span>Buscar</span>
+            <input id="searchInput" type="search" placeholder="Pregunta, LSA, Puerta 4, feriado...">
+          </label>
+          <label>
+            <span>Curso</span>
+            <select id="courseFilter">
+              <option value="todos">Todos</option>
+              <option value="primero">Primero</option>
+              <option value="segundo">Segundo</option>
+              <option value="tercero">Tercero</option>
+            </select>
+          </label>
+          <label>
+            <span>Estado</span>
+            <select id="statusFilter">
+              <option value="todos">Todos</option>
+              <option value="pendiente">Pendiente</option>
+              <option value="realizada">Realizada</option>
+              <option value="sin clase">Sin clase</option>
+              <option value="recuperada">Recuperada</option>
+              <option value="adaptada">Adaptada</option>
+              <option value="cierre">Cierre</option>
+            </select>
+          </label>
+          <label>
+            <span>Eje</span>
+            <select id="themeFilter">
+              <option value="todos">Todos</option>
+              <option value="puertas">Puertas</option>
+              <option value="construcción">Construcción</option>
+              <option value="cuerpo">Cuerpo</option>
+              <option value="naturaleza">Naturaleza</option>
+              <option value="saludos">Saludos</option>
+              <option value="mundial">Mundial</option>
+              <option value="LSA">LSA</option>
+            </select>
+          </label>
+          <button id="clearFilters" class="button button--ghost" type="button">Limpiar filtros</button>
+          <button id="resetStatuses" class="button button--soft" type="button">Restablecer estados</button>
+        </div>
+
+        <p id="resultsCount" class="results-count" aria-live="polite"></p>
+        <div id="weeksGrid" class="weeks-grid"></div>
+      </section>
+
+      <section id="recursos" class="section resources-section" aria-labelledby="resources-title">
+        <div class="section__heading">
+          <p class="eyebrow">Materiales</p>
+          <h2 id="resources-title">Recursos</h2>
+        </div>
+        <div class="resources-note">
+          <p>Sección en construcción. Aquí se irán organizando las obras de arte, videos, fichas imprimibles, canciones, tarjetas y materiales usados en las clases.</p>
+        </div>
+        <div id="resourcesGrid" class="resource-grid"></div>
+      </section>
+
+      <section id="contacto" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section__heading">
+          <p class="eyebrow">Consultas</p>
+          <h2 id="contact-title">Contacto</h2>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__text">
+            <h3>Compartir preguntas también es parte del laboratorio</h3>
+            <p>Si querés hacer una consulta, compartir una idea o escribir sobre el Laboratorio Filosófico, podés enviar un mensaje desde este formulario.</p>
+          </div>
+          <form class="contact-form" action="https://formsubmit.co/naty.burnazzi@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde el Dashboard de Filosofía">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Configurar _next cuando exista la URL pública final en Vercel. -->
+            <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
+
+            <label>
+              <span>Nombre</span>
+              <input name="nombre" type="text" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Correo electrónico</span>
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>Asunto</span>
+              <input name="asunto" type="text" required>
+            </label>
+            <label>
+              <span>Mensaje</span>
+              <textarea name="mensaje" rows="5" required></textarea>
+            </label>
+            <button class="button button--send" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="img/identidad/Logo-Osa-Mayor.png" alt="Logo de Osa Mayor">
+      <p>Filosofía para niños y niñas · Laboratorio Filosófico · Osa Mayor</p>
+    </footer>
+
+    <dialog id="classModal" class="modal class-modal" aria-labelledby="modalTitle">
+      <div class="modal__header">
+        <div>
+          <p id="modalMeta" class="eyebrow"></p>
+          <h2 id="modalTitle"></h2>
+        </div>
+        <button id="closeModal" class="icon-button" type="button" aria-label="Cerrar planificación">×</button>
+      </div>
+      <div id="modalBody" class="modal__body"></div>
+    </dialog>
+
+    <dialog id="resourceModal" class="modal resource-modal" aria-labelledby="resourceModalTitle">
+      <div class="modal__header">
+        <div>
+          <p id="resourceModalMeta" class="eyebrow">Recursos</p>
+          <h2 id="resourceModalTitle"></h2>
+        </div>
+        <button id="closeResourceModal" class="icon-button" type="button" aria-label="Cerrar recurso">×</button>
+      </div>
+      <div id="resourceModalBody" class="modal__body"></div>
+    </dialog>
+
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Volver arriba">↑</button>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
