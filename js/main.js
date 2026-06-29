@@ -7,6 +7,7 @@ const courseNames = {
   tercero: "Tercero"
 };
 
+// Estados personalizados guardados solo en este navegador; no modifica js/data.js.
 const STATUS_STORAGE_KEY = "philosophyDashboardStatuses";
 const statusOptions = [
   { value: "pendiente", label: "Pendiente" },
@@ -17,8 +18,9 @@ const statusOptions = [
   { value: "cierre", label: "Cierre" }
 ];
 
-function safeImage(src, alt, className = "card__image") {
-  return `<img class="${className}" src="${src}" alt="${alt}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: '${className} placeholder', textContent: '✦'}))">`;
+function safeImage(src, alt, className = "card__image", priority = "lazy") {
+  const loading = priority === "high" ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
+  return `<img class="${className}" src="${src}" alt="${alt}" ${loading} decoding="async" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: '${className} placeholder', textContent: '✦'}))">`;
 }
 
 function statusLabel(status) {
@@ -83,7 +85,7 @@ function renderHelpers() {
 function renderBreathing() {
   $("#breathingGrid").innerHTML = breathingData.map((item, index) => `
     <article class="card breathing-card" tabindex="0" role="button" aria-expanded="false" data-breathing="${index}">
-      ${safeImage(item.image, item.name)}
+      ${safeImage(item.image, item.name, "card__image", "high")}
       <div class="card__body">
         <h3>${item.name}</h3>
         <p><strong>Ayuda a:</strong> ${item.helps}</p>

@@ -9,7 +9,7 @@ const imagePaths = {
 const helpersData = [
   {
     "id": "aris",
-    "name": "Aristóteles",
+    "name": "Ari – Aristóteles",
     "role": "El ayudante de la observación",
     "phrase": "Observar nos ayuda a entender.",
     "description": "Ari invita a mirar despacio, prestar atención y descubrir detalles que al principio no habíamos visto.",
@@ -52,66 +52,87 @@ const helpersData = [
 const breathingData = [
   {
     "name": "Respiración del águila",
-    "image": "img/respiraciones/01-respiracion-aguila.png",
+    "image": "img-optimizadas/respiraciones/01-respiracion-aguila.png",
     "how": "Abrí los brazos como alas. Inhalá elevándolos suavemente y exhalá bajándolos como un águila que planea.",
     "repetitions": "4 veces.",
     "helps": "Ampliar la respiración, mover el cuerpo con calma y sentir libertad."
   },
   {
     "name": "Respiración del globo",
-    "image": "img/respiraciones/02-respiracion-globo.png",
+    "image": "img-optimizadas/respiraciones/02-respiracion-globo.png",
     "how": "Imaginá que sos un globo. Inhalá mientras abrís los brazos formando un círculo y exhalá soltando el aire lentamente.",
     "repetitions": "5 veces.",
     "helps": "Tomar conciencia de la respiración y soltar tensiones."
   },
   {
     "name": "Respiración de Spiderman",
-    "image": "img/respiraciones/03-respiracion-spiderman.png",
+    "image": "img-optimizadas/respiraciones/03-respiracion-spiderman.png",
     "how": "Prepará la mano como si lanzaras una telaraña. Inhalá hacia adentro y exhalá estirando el brazo hacia adelante.",
     "repetitions": "4 veces.",
     "helps": "Liberar energía, jugar con el movimiento y volver a enfocarse."
   },
   {
     "name": "Respiración de la taza de chocolate caliente",
-    "image": "img/respiraciones/04-respiracion-taza-chocolate.png",
+    "image": "img-optimizadas/respiraciones/04-respiracion-taza-chocolate.png",
     "how": "Juntá las manos como una taza. Inhalá como si olieras chocolate y exhalá despacio como si lo soplaras.",
     "repetitions": "5 veces.",
     "helps": "Respirar más lento, relajarse y disfrutar calma."
   },
   {
     "name": "Respiración de la mano",
-    "image": "img/respiraciones/05-respiracion-mano.png",
+    "image": "img-optimizadas/respiraciones/05-respiracion-mano.png",
     "how": "Recorré el contorno de una mano con el índice de la otra: al subir inhalá, al bajar exhalá.",
     "repetitions": "1 vez con cada mano.",
     "helps": "Concentrarse, ordenar la respiración y calmar la mente."
   },
   {
     "name": "Respiración del cocodrilo",
-    "image": "img/respiraciones/06-respiracion-cocodrilo.png",
+    "image": "img-optimizadas/respiraciones/06-respiracion-cocodrilo.png",
     "how": "Estirá los brazos como la boca de un cocodrilo. Inhalá al abrir y exhalá al cerrar lentamente.",
     "repetitions": "4 veces.",
     "helps": "Coordinar respiración y movimiento de manera divertida."
   },
   {
     "name": "Respiración del mar",
-    "image": "img/respiraciones/07-respiracion-mar.png",
+    "image": "img-optimizadas/respiraciones/07-respiracion-mar.png",
     "how": "Llevá las manos a las orejas como caracoles. Inhalá suave y exhalá diciendo maaaaar despacio.",
     "repetitions": "5 veces.",
     "helps": "Escuchar el propio cuerpo, bajar el ruido externo y encontrar calma."
   },
   {
     "name": "Respiración del arco y la flecha",
-    "image": "img/respiraciones/08-respiracion-arco-y-flecha.png",
+    "image": "img-optimizadas/respiraciones/08-respiracion-arco-y-flecha.png",
     "how": "Imaginá un arco. Inhalá llevando la flecha hacia atrás y exhalá soltándola suavemente.",
     "repetitions": "5 veces.",
     "helps": "Enfocar la atención y soltar el aire con intención."
   },
   {
     "name": "Respiración de la flor",
-    "image": "img/respiraciones/09-respiracion-flor.png",
+    "image": "img-optimizadas/respiraciones/09-respiracion-flor.png",
     "how": "Cerrá una mano como flor dormida. Inhalá abriéndola lentamente y exhalá cerrándola con suavidad.",
     "repetitions": "3 veces con cada mano.",
     "helps": "Respirar con delicadeza, concentrarse y conectar con la calma."
+  },
+  {
+    "name": "Respiración del ping-pong",
+    "image": "img-optimizadas/respiraciones/10-respiracion-ping-pong.png",
+    "how": "Sostené la paleta en una mano y la pelota en la otra. Tirás la pelota hacia arriba e inhalás. Cuando le das con la paleta, exhalás suavemente.",
+    "repetitions": "4 veces.",
+    "helps": "Coordinar respiración y movimiento, jugar con atención y volver a enfocarse."
+  },
+  {
+    "name": "Respiración del pianista",
+    "image": "img-optimizadas/respiraciones/11-respiracion-pianista.png",
+    "how": "Llevá las manos con las palmas hacia abajo y los dedos un poco curvados, como si fueras a tocar el piano. Al subir las manos a la altura del cuello, inhalá. Después exhalá en cuatro soplidos suaves, como si tocaras teclas: exhalo, exhalo, exhalo, exhalo.",
+    "repetitions": "4 veces.",
+    "helps": "Soltar tensiones, coordinar el aire y el movimiento, y concentrarse con calma."
+  },
+  {
+    "name": "Respiración del arquero",
+    "image": "img-optimizadas/respiraciones/12-respiracion-arquero.png",
+    "how": "Con las piernas un poquito separadas, estirá los brazos a los costados e inhalá. Después, al agarrar la pelota en el centro, exhalá despacio.",
+    "repetitions": "4 veces.",
+    "helps": "Coordinar respiración y movimiento, enfocar la atención y entrar en calma."
   }
 ];
 
@@ -936,7 +957,7 @@ const weeksData = [
           "primero",
           "cuerpo",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
-          "puede continuar Hipatia o retomarse Ari como ayudante de la observación corporal",
+          "puede continuar Hipatia o retomarse Ari – Aristóteles como ayudante de la observación corporal",
           "respiración de la abeja, respiración de Spiderman o respiración de la isla"
         ],
         "eje": "reconocer el cuerpo como parte del pensamiento, la calma y la atención",
@@ -960,11 +981,11 @@ const weeksData = [
           "segundo",
           "cuerpo",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
-          "Hipatia o Ari",
+          "Hipatia o Ari – Aristóteles",
           "respiración de la abeja, respiración de la isla o respiración del mar"
         ],
         "eje": "explorar el cuerpo como lugar de atención, memoria y regulación",
-        "ayudante": "Hipatia o Ari",
+        "ayudante": "Hipatia o Ari – Aristóteles",
         "respiracion": "respiración de la abeja, respiración de la isla o respiración del mar",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
         "recurso": "posturas de animales y respiraciones",
@@ -993,12 +1014,12 @@ const weeksData = [
           "tercero",
           "naturaleza",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
-          "Ari o Hipatia",
+          "Ari – Aristóteles o Hipatia",
           "respiración de Spiderman, respiración de la abeja o respiración del mar",
           "clase recuperada por feriado de la semana anterior"
         ],
         "eje": "reconocer el cuerpo como parte del pensamiento, la atención y la calma",
-        "ayudante": "Ari o Hipatia",
+        "ayudante": "Ari – Aristóteles o Hipatia",
         "respiracion": "respiración de Spiderman, respiración de la abeja o respiración del mar",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
         "recurso": "posturas de animales y respiraciones",
@@ -1018,12 +1039,12 @@ const weeksData = [
           "primero",
           "naturaleza",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el coraz",
-          "Ari",
+          "Ari – Aristóteles",
           "respiración de Spiderman o respiración de la abeja",
           "clase al aire libre"
         ],
         "eje": "observar la naturaleza con atención, elegir, comparar y descubrir detalles",
-        "ayudante": "Ari",
+        "ayudante": "Ari – Aristóteles",
         "respiracion": "respiración de Spiderman o respiración de la abeja",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el coraz",
         "recurso": "sobrecito “Mis cinco maravillas”",
@@ -1043,12 +1064,12 @@ const weeksData = [
           "segundo",
           "naturaleza",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
-          "Ari o Hipatia",
+          "Ari – Aristóteles o Hipatia",
           "respiración del mar, respiración de la abeja o respiración inicial breve",
           "clase adentro"
         ],
         "eje": "reconocer el cuerpo, recordar posturas y comenzar una secuencia corporal compartida",
-        "ayudante": "Ari o Hipatia",
+        "ayudante": "Ari – Aristóteles o Hipatia",
         "respiracion": "respiración del mar, respiración de la abeja o respiración inicial breve",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
         "recurso": "posturas de animales y secuencia inicial de Saludo al Sol",
@@ -1077,12 +1098,12 @@ const weeksData = [
           "tercero",
           "naturaleza",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
-          "Ari o Hipatia",
+          "Ari – Aristóteles o Hipatia",
           "respiración de la flor, respiración de la abeja o respiración del mar",
           "realizada"
         ],
         "eje": "reconocer el cuerpo como espacio de atención, memoria, respiración y movimiento",
-        "ayudante": "Ari o Hipatia",
+        "ayudante": "Ari – Aristóteles o Hipatia",
         "respiracion": "respiración de la flor, respiración de la abeja o respiración del mar",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
         "recurso": "posturas de animales y secuencia de Saludo al Sol",
@@ -1102,12 +1123,12 @@ const weeksData = [
           "primero",
           "naturaleza",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
-          "Ari",
+          "Ari – Aristóteles",
           "respiración de la abeja o respiración del globo",
           "realizada"
         ],
         "eje": "observar elementos de la naturaleza, distinguir vivo/no vivo/tuvo vida y continuar el trabajo corporal con Saludo al Sol",
-        "ayudante": "Ari",
+        "ayudante": "Ari – Aristóteles",
         "respiracion": "respiración de la abeja o respiración del globo",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 5: Transformam",
         "recurso": "maravillas recolectadas en el parque y secuencia inicial de Saludo al Sol",
@@ -1127,12 +1148,12 @@ const weeksData = [
           "segundo",
           "naturaleza",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el coraz",
-          "Ari",
+          "Ari – Aristóteles",
           "respiración del mar, respiración de la abeja o respiración inicial breve",
           "realizada / clase al aire libre"
         ],
         "eje": "observar la naturaleza con atención, clasificar, comparar y descubrir detalles",
-        "ayudante": "Ari",
+        "ayudante": "Ari – Aristóteles",
         "respiracion": "respiración del mar, respiración de la abeja o respiración inicial breve",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el coraz",
         "recurso": "desafío de búsqueda 5, 4, 3, 2, 1",
@@ -1191,12 +1212,12 @@ const weeksData = [
           "primero",
           "saludos",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el corazón · Puerta 5: Transforma",
-          "Sócrates o Ari",
+          "Sócrates",
           "respiración del arquero, respiración del globo o respiración de la mano",
           "realizada"
         ],
         "eje": "descubrir que el saludo puede hacerse con palabras, gestos, miradas, movimientos y distintas partes del cuerpo",
-        "ayudante": "Sócrates o Ari",
+        "ayudante": "Sócrates",
         "respiracion": "respiración del arquero, respiración del globo o respiración de la mano",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el corazón · Puerta 5: Transforma",
         "recurso": "al: exploración corporal de saludos",
@@ -1216,12 +1237,12 @@ const weeksData = [
           "segundo",
           "saludos",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el corazón · Puerta 5: Transforma",
-          "Ari o Hipatia",
+          "Hipatia",
           "respiración de la abeja, respiración del mar o respiración de la mano",
           "realizada"
         ],
         "eje": "articular naturaleza, cuerpo y comunicación: lo vivo, lo no vivo, los saludos y el movimiento compartido",
-        "ayudante": "Ari o Hipatia",
+        "ayudante": "Hipatia",
         "respiracion": "respiración de la abeja, respiración del mar o respiración de la mano",
         "puertas": "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el corazón · Puerta 5: Transforma",
         "recurso": "al: conversación sobre seres vivos/no vivos, exploración de saludos y práctica de Saludo al Sol",
@@ -1250,7 +1271,7 @@ const weeksData = [
           "tercero",
           "mundial",
           "Puerta 1: Nos disponemos · Puerta 2: Recibimos la propuesta · Puerta 3: Miramos con lupa · Puerta 4: Escuchamos con el corazón · Puerta 5: Transforma",
-          "Ari o Hipatia",
+          "Hipatia",
           "respiración del arquero",
           "clase recuperada / realizada al aire libre"
         ],
